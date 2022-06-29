@@ -1,0 +1,392 @@
+/*1.a8*/
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0" />
+
+    <style>
+        body {
+            background-color: #202e38;
+            color: #000000;
+            font-family: 'Zen Loop', cursive;
+            font-size: larger;
+            margin: 0;
+        }
+
+        .content {
+            margin: 10px;
+            height: 100vh;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            padding: 15px 10px 40px;
+            border-radius: 10px;
+            background-color: #0a1c2a;
+        }
+
+        table {
+            color: rgba(240, 248, 255, 0.708);
+            font-weight: 100;
+            border: 2px solid #FF4C29;
+            border-radius: 5px;
+            width: 85%;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        caption {
+
+            font-size: larger;
+            color: #00ccff;
+        }
+
+        td,
+        th {
+
+            text-align: center;
+            width: 12.5%;
+            padding: 5px 3px;
+        }
+
+        th {
+            background-color: #2C394B;
+        }
+
+        td {
+            font-size: medium;
+            background-color: #334756;
+        }
+
+        .day {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: aliceblue;
+            background-color: #0a1c2a;
+            border-radius: 5px;
+        }
+
+        .subhead {
+            padding: 0px 1px 25px;
+        }
+
+        h2 {
+            margin-left: 6%;
+            display: inline;
+            color: #000000;
+            background-color: #ffffff7c;
+            padding: 0px 10px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="content">
+        <h1>TimeTable</h1>
+        <div class="subhead">
+            <h2>B-Tech II Year II Semester</h2>
+        </div>
+        <div class="wrap">
+            <table>
+                <caption>Time Table</caption>
+                <tr>
+                    <th>Day-Time</th>
+                    <th>8-9</th>
+                    <th>9-10</th>
+                    <th>10-11</th>
+                    <th>11-12</th>
+                    <th>12-1</th>
+                    <th>1-2</th>
+                    <th>2-3</th>
+                </tr>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td colspan="3">&larr;WT Lab(C-III)&rarr;</td>
+                    <td rowspan="6" class="Lunch">Lunch</td>
+                    <td>DBMS</td>
+                    <td>OS</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td class="day">Tueday</td>
+                    <td>SE</td>
+                    <td>E&HV</td>
+                    <td>CS</td>
+                    <td colspan="3">&larr;DBMS Lab(C-III)&rarr;</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>OS</td>
+                    <td>DBMS</td>
+                    <td>WT</td>
+                    <td>SE</td>
+                    <td>CS</td>
+                    <td>Library</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td>SE</td>
+                    <td>OS</td>
+                    <td>DBMS</td>
+                    <td>SOC</td>
+                    <td>CS</td>
+                    <td>WT</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td colspan="3">&larr;CS Lab(C-III)&rarr;</td>
+                    <td>CS</td>
+                    <td>DBMS</td>
+                    <td>WT</td>
+                </tr>
+                <tr>
+                    <td class="day">Saturday</td>
+                    <td colspan="2">&larr;SOC Lab&rarr;</td>
+                    <td>WT</td>
+                    <td>E&HV</td>
+                    <td colspan="2" id="CC">&larr;Competitive Coding(E-LE)&rarr;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+/* b */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraStructureTable</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        table {
+            width: 100vw;
+        }
+
+        .header1 {
+            background-color: beige;
+            justify-content: center;
+        }
+
+        .navigate {
+            background-color: rgb(208, 252, 252);
+        }
+
+        .navg {
+            list-style: none;
+        }
+
+        .navg>li {
+            padding: 10px 2px 0px;
+        }
+
+        .in {
+            background-color: ghostwhite;
+        }
+
+        .End {
+            background-color: lavender;
+            text-align: center;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <table>
+            <tr class="header1">
+                <td colspan="4">
+                    <h1>RVR&JC College of Engineering</h1>
+                </td>
+            </tr>
+            <tr class="in" colpan="1">
+                <td class="navigate">
+                    <ul class="navg">
+                        <li><a href="#">Main Block</a></li>
+                        <li><a href="#">Cyber Block</a></li>
+                        <li><a href="#">Digital Block</a></li>
+                        <li><a href="#">Centianal Block</a></li>
+                        <li><a href="#">Silver Jubliee Block</a></li>
+                    </ul>
+                </td>
+                <td class="MainBody" colspan="3">
+                    <h2>RVR&JC InfraStructure</h2>
+                    <h3>Information &rarr;</h3>
+                    <ul>
+                        <li>Administrative Block 1773 sq.m. (19077.48 sq.ft) (ground floor of
+                            main building).</li>
+                        <li>Principal Office 280 sq.mts. (3012.8 sq.ft.)</li>
+                        <li>Staff Room 2472.35 sq.mt. (26602.486 sq.ft.)</li>
+                        <li> Common Room 668.15 sq.mt. (7189.294 sq.ft.)</li>
+                        <li>Canteen 1485.69 sq.mt. (15,986.02 sq.ft.)</li>
+                        <li> Auditorium 743+743+1860 = 3346 sq.mts.</li>
+                        <li>Internet facilities (35989.36 sq.ft.)<br>
+                            1 GBPS</li>
+                        <li> Medical facilities Dispensary provided in the college. Medicines
+                            supplied free of cost to all students and staff. 2
+                            Doctors, 1 Pharmacist and 1 Female Nurse are
+                            appointed.<br>
+                            Dispensary with free medicines provided in all
+                            hostels with a Doctor and an Assistant.</li>
+                        <li>Transport facilities 28 buses provided for students and staff.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="End">
+                <td colspan="4">&larr;End of the Article&rarr;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+
+/*  c  */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraStructure Div and Span</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header1 {
+            background-color: beige;
+            padding: 15px;
+            /* height: 110px; */
+            width: 100vw;
+        }
+
+        .navigate {
+            width: 20%;
+            background-color: rgb(208, 252, 252);
+        }
+
+        .in {
+            width: 80%;
+            background-color: ghostwhite;
+        }
+
+        .navg {
+            list-style: none;
+        }
+
+        .navg>li {
+            padding: 10px 2px 0px;
+        }
+
+
+        .navigate,
+        .in {
+            float: left;
+            height: 400px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .End {
+            box-sizing: border-box;
+            background-color: lavender;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header1">
+            <h1>RVR&JC College of Engineering</h1>
+        </div>
+        <div class="mainbody">
+            <div class="navigate">
+                <ul class="navg">
+                    <li><a href="#">Main Block</a></li>
+                    <li><a href="#">Cyber Block</a></li>
+                    <li><a href="#">Digital Block</a></li>
+                    <li><a href="#">Centianal Block</a></li>
+                    <li><a href="#">Silver Jubliee Block</a></li>
+                </ul>
+            </div>
+            <div class="in">
+                <h2>RVR&JC InfraStructure</h2>
+                <h3>Information &rarr;</h3>
+                <ul>
+                    <li>Administrative Block 1773 sq.m. (19077.48 sq.ft) (ground floor of
+                        main building).</li>
+                    <li>Principal Office 280 sq.mts. (3012.8 sq.ft.)</li>
+                    <li>Staff Room 2472.35 sq.mt. (26602.486 sq.ft.)</li>
+                    <li> Common Room 668.15 sq.mt. (7189.294 sq.ft.)</li>
+                    <li>Canteen 1485.69 sq.mt. (15,986.02 sq.ft.)</li>
+                    <li> Auditorium 743+743+1860 = 3346 sq.mts.</li>
+                    <li>Internet facilities (35989.36 sq.ft.)<br>
+                        1 GBPS</li>
+                    <li> Medical facilities Dispensary provided in the college. Medicines
+                        supplied free of cost to all students and staff. 2
+                        Doctors, 1 Pharmacist and 1 Female Nurse are
+                        appointed.<br>
+                        Dispensary with free medicines provided in all
+                        hostels with a Doctor and an Assistant.</li>
+                    <li>Transport facilities 28 buses provided for students and staff.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="End">&larr;End of the Article&rarr;</div>
+    </div>
+</body>
+
+</html>
